@@ -105,7 +105,7 @@ const AppointmentList: React.FC = () => {
 
   return (
     <div className="max-w-md mx-auto ">
-      <h2 className="text-2xl font-bold mb-4">Appointments</h2>
+      <h2 className="text-2xl font-bold mb-4">Manage Time Slot</h2>
       <Button className="w-full mb-6" type="submit">
         Add new slot
       </Button>

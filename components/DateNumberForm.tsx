@@ -64,25 +64,52 @@ export function DateTimeForm() {
     async function onSubmit(values: z.infer<typeof formSchema>) {
       console.log(values);
     
-      try {
+      // set date to +8 GMT
+
+      values.date.setHours(values.date.getHours() + 8);
+
+
         for (const value of values.times) {
           const data = {
             provider_id: User.id,
             date: values.date,
             time_block: value.split(":")[0],
           };
-    
-          await pb.collection('Availabilities').create(data);
+
+
+          console.log(data);
+          const r = await pb.collection('Availabilities').getList(1, 50, {
+
+            filter: `provider_id="${data.provider_id}" && date="${data.date}" && time_block="${data.time_block}"`,
+
+            
+        });
+
+        console.log(r);
+        console.log(r.items.length);
+        console.log(values);
+        
+        
+
+
+          if (r.items.length > 0) {
+            continue;
+          }
+          
+          try {
+            
+            const t = await pb.collection('Availabilities').create(data);
+          } catch (error) {
+            continue
+          }
         }
         toast({
           title: "✅ Time slot added",
           description: "Your time slot has been added to the list.",
           color: "success",
         })
-        router.push('/');
-      } catch (error) {
-        console.error(error);
-      }
+        // router.push('/');
+      
     }
     
   return (

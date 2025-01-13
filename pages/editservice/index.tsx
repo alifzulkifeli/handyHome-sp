@@ -74,6 +74,7 @@ export default function ListService() {
         <Page padding={3}>
             <Section>
                 <div></div>
+                <h2 className="text-2xl font-bold mb-4">Manage Services</h2>
                 {services.length > 0 ? (
                     services.map((service:any, index:number) => (
                         <div key={index} >

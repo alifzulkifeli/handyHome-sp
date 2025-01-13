@@ -126,19 +126,19 @@ export function MobileDashboard() {
                     <div className="grid grid-cols-2 gap-4">
                         <Button variant="outline" size="lg" onClick={() => router.push("/addslot")} >
                             
-                        ➕  Add Time Slot
+                        ➕  Add New Time Slot
                         </Button>
                         <Button variant="outline" size="lg"  onClick={() => router.push("/addservice")}>
                            
-                        ➕  Add Services
+                        ➕  Add New Services
                         </Button>
                         <Button variant="outline" size="lg" onClick={() => router.push("/editslot")} >
                           
-                            ✏️ Edit Time Slot
+                            ✏️ Manage Time Slot
                         </Button>
                         <Button variant="outline" size="lg"  onClick={() => router.push("/editservice")}>
                         
-                            ✏️ Edit Services
+                            ✏️ Manage Services
                         </Button>
                     </div>
 
