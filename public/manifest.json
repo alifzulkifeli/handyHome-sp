@@ -1,0 +1,47 @@
+{
+	"name": "Handyhome",
+	"short_name": "Handyhome",
+	"description": "Find any services in your local area",
+	"icons": [
+		{
+			"src": "/images/icon-192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "/images/icon-512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		},
+		{
+			"src": "/images/icon-maskable-192.png",
+			"type": "image/png",
+			"sizes": "192x192",
+			"purpose": "maskable"
+		},
+		{
+			"src": "/images/icon-maskable-512.png",
+			"type": "image/png",
+			"sizes": "512x512",
+			"purpose": "maskable"
+		}
+	],
+	"screenshots": [
+		{
+			"src": "/src/img/screenshots/shot1.png",
+			"sizes": "400x822",
+			"type": "image/png",
+			"form_factor": "narrow"
+		},
+		{
+			"src": "/src/img/screenshots/shot7.png",
+			"sizes": "1280x676",
+			"type": "image/png",
+			"form_factor": "wide"
+		}
+	],
+	"start_url": "/?source=pwa",
+	"orientation": "portrait",
+	"display": "standalone",
+	"scope": "/"
+}

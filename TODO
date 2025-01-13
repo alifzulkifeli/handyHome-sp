@@ -1,0 +1,37 @@
+DONE 2/12 Fix Homepage layout and add category, remove button, add details button, integrate lorem picsum
+            Order PAge - add input alamat - add date time picker - submit navbar - 
+3/12 Order  get loggedin user + login functionality + 
+            https://help.billplz.com/article/164-sign-up-a-sandbox-account
+            to get loggedin user, see chat[id]
+
+4/12 
+5/12 
+13/12 Fix chat in mobile[chat prevent sent same message
+    in mobile lepas send dia hilang] 
+    
+    
+    - list order 
+    - submit save order - payment gateway dummy
+    
+    
+[100%] - signup user 
+[100%] - populate data and image/amnual
+[100%] - pb-16 in page.tsx cause chat to have bottom padding
+[0%] - fix pwa
+[0%] - install pwa
+[100%] - Home-no data searched
+[100%] - Sort
+[100%] - Back to Home
+
+
+[100%] - Home Page page
+[100%] - Search page
+[100%] - Service Details Page
+[100%] - Create Order Page
+[100%] - Sign up
+[100%] - Sign In 
+[100%] - My account
+[100%] - Order List Page
+[100%] - Order Details Page
+[100%] - Chat List Page
+[100%] - Chat Details Page
