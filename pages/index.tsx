@@ -49,7 +49,7 @@ const Index = () => {
         <Page padding={3}>
             <Section>
                 {user ? (
-                    <div>
+                    <div className='pb-20' >
                         <MobileDashboard />
                     </div>
                 ) : (

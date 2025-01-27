@@ -13,7 +13,7 @@ const BottomNavService = ({ serviceroviderID, serviceId }: Props) => {
 	const router = useRouter()
 
 	return (
-		<div className='sm:hidden'>
+		<div className=''>
 			<nav className='fixed bottom-0 w-full border-t bg-zinc-100  dark:border-zinc-800 dark:bg-zinc-900'>
 				<div className=' flex h-16  items-center justify-around'>
 

@@ -67,7 +67,7 @@ export default function LoginForm() {
             </header>
         </div>
             <Section>
-                <Card className="m-4 mt-40" >
+                <Card className="m-4 mt-40 max-w-screen-md mx-auto" >
                     <CardHeader>
                         <CardTitle>Login</CardTitle>
                         <CardDescription>Enter your email and password to log in. <Link href="/signup" className="underline font-bold">Click here</Link> to create new account</CardDescription>
