@@ -71,7 +71,7 @@ export function MobileDashboard() {
 
 
                 const last5MonthsRevenue = booking_records.filter((booking: any) => booking.status === 'Completed').reduce((acc: any, booking: any) => {
-                    const date = new Date(booking.created);
+                    const date = new Date(booking.booking_date);
                     const month = date.toLocaleString('default', { month: 'short' });
                     acc[month] = acc[month] ? acc[month] + booking.price : booking.price;
                     return acc;
